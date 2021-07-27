@@ -1,35 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap');
-*{
+* {
     font-family: 'Chakra Petch', sans-serif;
-
 }
-
 
 #landing {
 background: url(https://source.unsplash.com/ub1sSvJ_Tbs);
 }
 
-img{
-    width: 150px;
+nav {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+img {
+    display: flex;
+    width: 100%;
+    padding: 2rem, 1rem, 2rem, 1rem;
 }
-header{
+
+header {
     text-align: center;
     padding: 20px 10px 20px 10px;
-
 }
 
-h1{
+h1 {
     color: white;
     position: center;
     font-size: 100px;
+    padding: 10px;
 }
 
-.images {
-    float: left;
-    text-align:justify ;
-}
-
-.images-2{
-float: right;
-text-align: justify;
+h2 {
+    background-color: rgb(255, 255, 0);
 }
