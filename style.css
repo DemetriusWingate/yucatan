@@ -6,8 +6,6 @@
 
 #landing {
 background: url(https://source.unsplash.com/ub1sSvJ_Tbs);
-margin-bottom: 20px, 20px, 20px, 20px;
-padding: 10px, 5px, 10px, 5px;
 }
 
 body {
@@ -67,7 +65,7 @@ img {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     display: block;
   }
   
@@ -93,15 +91,9 @@ img {
   .navbar {display: none;}
 
 
+/* Media Query #1*/
 
-
-
-
-@media only screen and (min-width: 667px) {
-
-}
-
-@media only screen and (min-width: 801px) {
+@media screen and (min-width: 801px) {
 .mobilenav {display: none;}
 .navbar {display: inline-block;}
 
@@ -112,9 +104,9 @@ img {
 
       nav a {
         float: right;
+        color: yellow;
         text-align: center;
         padding: 20px;
-        text-decoration: none;
         font-size: 10px;
       }
 
@@ -136,7 +128,6 @@ img {
         text-align: center;
       }
 
-      /* This rule centers the nav items verticaly in the bar with the height and line height properties. Spacing between the nav items is controlled by setting right and left padding.  */
       nav li {
         display: inline-block;
         list-style: none;
@@ -145,16 +136,53 @@ img {
         padding: 0 20px;
       }
       
-      /* :hover allows you change the background color of the nav items when you mouse over them. Play around with the transition value to change the speed of the hover transition. */
       nav li:hover {
         background: rgb(139, 139, 14);
         transition: background .3s;
       }
       
-      /* This rule is applied to the link <a> tag. It lets you turn off the link underline and set the link text color. */
       .navbar {
         color: #fff;
         text-decoration: none;
       }
     
 }
+
+/*Media Query 2*/
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .mobilenav {display: none;}
+  .navbar {display: inline-block;}
+     
+     
+  nav {
+      overflow: hidden;
+           }
+     
+  nav a {
+    float: right;
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+    font-size: 10px;
+  }
+     
+   nav a:hover {
+          background-color: rgba(95, 81, 126, 0.34);
+       text-decoration: none;
+      }
+     
+  .flex-container {
+       display: flex;
+       flex-wrap: wrap;
+      justify-content: center;
+     
+  }
+  
+  .flex-child {
+      width: 35%;
+      padding-left: 25px;
+      text-align: center;  
+      }  
+     
+  }
+  
