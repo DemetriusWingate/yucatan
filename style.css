@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap');
 * {
     font-family: 'Chakra Petch', sans-serif;
+    
 }
 
 #landing {
 background: url(https://source.unsplash.com/ub1sSvJ_Tbs);
+margin-bottom: 20px, 20px, 20px, 20px;
+padding: 10px, 5px, 10px, 5px;
 }
 
-nav {
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-img {
-    display: flex;
-    width: 100%;
-    padding: 2rem, 1rem, 2rem, 1rem;
+body {
+background-color: rgb(24, 44, 24);
 }
 
 header {
@@ -31,6 +26,135 @@ h1 {
     padding: 10px;
 }
 
-h2 {
+h2{
+    margin-top: -15px;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
     background-color: rgb(255, 255, 0);
+   
+}
+
+p{
+    color: yellow;
+    text-align: center;
+    }
+
+img {
+    border-radius: 100%;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#seven {
+    text-align: center;
+    color: yellow;
+}
+
+/*Mobile Nav*/
+
+.mobilenav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .mobilenav #navLinks {
+    display: none;
+  }
+  
+  .mobilenav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+  }
+  
+  .mobilenav a.icon {
+    background: yellow;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .mobilenav a:hover {
+    background-color: yellow;
+    color: rgb(24, 44, 24);
+  }
+  
+  .active {
+    background-color: rgb(24, 44, 24);;
+    color: green;
+  }
+  
+  .mobilenav {display: block;}
+  .navbar {display: none;}
+
+
+
+
+
+
+@media only screen and (min-width: 667px) {
+
+}
+
+@media only screen and (min-width: 801px) {
+.mobilenav {display: none;}
+.navbar {display: inline-block;}
+
+    nav {
+        background: rgb(24, 44, 24);;
+        overflow: hidden;
+      }
+
+      nav a {
+        float: right;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 10px;
+      }
+
+      .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      
+      .flex-child {
+
+        width: 30%;
+        padding-left: 25px;
+        text-align: center;
+      }
+
+      .flex-container h2 {
+
+        text-align: center;
+      }
+
+      /* This rule centers the nav items verticaly in the bar with the height and line height properties. Spacing between the nav items is controlled by setting right and left padding.  */
+      nav li {
+        display: inline-block;
+        list-style: none;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+      }
+      
+      /* :hover allows you change the background color of the nav items when you mouse over them. Play around with the transition value to change the speed of the hover transition. */
+      nav li:hover {
+        background: rgb(139, 139, 14);
+        transition: background .3s;
+      }
+      
+      /* This rule is applied to the link <a> tag. It lets you turn off the link underline and set the link text color. */
+      .navbar {
+        color: #fff;
+        text-decoration: none;
+      }
+    
 }
